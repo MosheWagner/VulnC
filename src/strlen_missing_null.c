@@ -7,6 +7,7 @@ char * copy_str(char *in_buff)
 	uint32_t size = strlen(in_buff);
 	char * new_buff = malloc(size);
 	memcpy(new_buff, in_buff, size);
+    return new_buff;
 }
 
 int main()
