@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+#define MAX(a,b) a>b?a:b
+
 int main()
 {
     // open self
@@ -19,7 +21,7 @@ int main()
 	char buff[50];
     int sz = 100;
     int sz3 = 200;
-	sz = max(sz, sz3);
+	sz = MAX(sz, sz3);
 
 	read(fd, buff, sz);
 	printf("%s", buff);
