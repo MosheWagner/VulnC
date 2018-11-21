@@ -9,17 +9,10 @@ int main()
     fd = fopen("bad_reads.c", "r");
     
     
-    if (fd == 0)
-    {
-      perror("Error while opening the file.\n");
-      exit(EXIT_FAILURE);
-    }
-    
-    
-	char buff[50];
-    int sz = 100;
-	read(fd, buff, sz);
-	printf("%s", buff);
+	char buff[40];
+        int sz = 70;
+	read(fd, buff,  sz);
+	printf("%s",  buff);
 
 	return 0;
 }
