@@ -10,7 +10,15 @@ int main()
     
     
 	char buff[40];
-        int sz = 70;
+    int sz = 5;
+    
+    int MODE;
+    scanf("%d", MODE);
+        
+    if (MODE == 1) sz = 1000;
+    if (MODE == 2) sz = sizeof(buff);
+    if (MODE == 3) sz = 3;
+    
 	read(fd, buff,  sz);
 	printf("%s",  buff);
 
