@@ -18,6 +18,7 @@ int main()
     if (MODE == 1) sz = 1000;
     if (MODE == 2) sz = sizeof(buff);
     if (MODE == 3) sz = 3;
+    if (MODE == 4) sz = -1;
     
 	read(fd, buff,  sz);
 	printf("%s",  buff);
