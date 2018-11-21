@@ -18,6 +18,9 @@ int main()
     
 	char buff[50];
     int sz = 100;
+    int sz3 = 200;
+	sz = max(sz, sz3);
+
 	read(fd, buff, sz);
 	printf("%s", buff);
 
